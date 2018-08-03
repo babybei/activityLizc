@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title></title>
+    <link href="style/weui.css" rel="stylesheet" />
+    <link href="style/example.css" rel="stylesheet" />
+    <style>
+        .weui-dialog__bd {
+            display: none;
+            padding: 2.7em 20px 1.7em;
+            color: #333;
+        }
+    </style>
+    <script src="scripts/weui.min.js"></script>
+    <script src="scripts/vue.js"></script>
+    <script src="scripts/data.js"></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="page panel js_show">
+            <div class="page__hd">
+                <h1 class="page__title">赛柏蓝</h1>
+                <p class="page__desc">赛柏蓝（Mic366）,中国医药行业专业的资讯信息分享互动平台，致力于及时、准确、有用！</p>
+            </div>
+
+            <div class="page__bd">
+
+                <div class="weui-panel weui-panel_access">
+                    <div class="weui-cells__title">题1：【赛柏蓝】核心服务和业务有哪些？（多选）</div>
+                    <div class="weui-cells weui-cells_checkbox">
+                        <label class="weui-cell weui-check__label" for="s1_1">
+                            <div class="weui-cell__hd">
+                                <input type="checkbox" class="weui-check" name="s1" id="s1_1">
+                                <i class="weui-icon-checked"></i>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <p>新媒体</p>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="s1_2">
+                            <div class="weui-cell__hd">
+                                <input type="checkbox" name="s1" class="weui-check" id="s1_2">
+                                <i class="weui-icon-checked"></i>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <p>品牌传播</p>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="s1_3">
+                            <div class="weui-cell__hd">
+                                <input type="checkbox" name="s1" class="weui-check" id="s1_3">
+                                <i class="weui-icon-checked"></i>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <p>会议培训</p>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="s1_4">
+                            <div class="weui-cell__hd">
+                                <input type="checkbox" name="s1" class="weui-check" id="s1_4">
+                                <i class="weui-icon-checked"></i>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <p>智库研究</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="weui-panel weui-panel_access">
+                    <div class="weui-cells__title">题2：【赛柏蓝】的公众号包括哪些？（多选）</div>
+                    <div class="weui-cells weui-cells_checkbox">
+                        <label class="weui-cell weui-check__label" for="s2_1">
+                            <div class="weui-cell__hd">
+                                <input type="checkbox" class="weui-check" name="s1" id="s2_1">
+                                <i class="weui-icon-checked"></i>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <p>赛柏蓝</p>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="s2_2">
+                            <div class="weui-cell__hd">
+                                <input type="checkbox" name="s1" class="weui-check" id="s2_2">
+                                <i class="weui-icon-checked"></i>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <p>赛柏蓝器械</p>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="s2_3">
+                            <div class="weui-cell__hd">
+                                <input type="checkbox" name="s1" class="weui-check" id="s2_3">
+                                <i class="weui-icon-checked"></i>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <p>基层医师公社</p>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="s2_4">
+                            <div class="weui-cell__hd">
+                                <input type="checkbox" name="s1" class="weui-check" id="s2_4">
+                                <i class="weui-icon-checked"></i>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <p>药店经理人</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="weui-panel weui-panel_access">
+                    <div class="weui-cells__title">题3：【赛柏蓝】总用户数有多少？（单选）</div>
+                    <div class="weui-cells weui-cells_radio">
+                        <label class="weui-cell weui-check__label" for="s3_1">
+                            <div class="weui-cell__bd">
+                                <p>10万</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <input type="radio" class="weui-check" name="s3" id="s3_1">
+                                <span class="weui-icon-checked"></span>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="s3_2">
+                            <div class="weui-cell__bd">
+                                <p>50万</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <input type="radio" name="s3" class="weui-check" id="s3_2">
+                                <span class="weui-icon-checked"></span>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="s3_3">
+                            <div class="weui-cell__bd">
+                                <p>80万</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <input type="radio" name="s3" class="weui-check" id="s3_3">
+                                <span class="weui-icon-checked"></span>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="s3_4">
+                            <div class="weui-cell__bd">
+                                <p>170万</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <input type="radio" name="s3" class="weui-check" id="s3_4">
+                                <span class="weui-icon-checked"></span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="weui-panel weui-panel_access">
+                    <div class="weui-cells__title">题4：【赛柏蓝】能为企业提供哪些帮助？（多选）</div>
+                    <div class="weui-cells weui-cells_checkbox">
+                        <label class="weui-cell weui-check__label" for="s4_1">
+                            <div class="weui-cell__hd">
+                                <input type="checkbox" class="weui-check" name="s1" id="s4_1">
+                                <i class="weui-icon-checked"></i>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <p>引爆品牌宣传</p>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="s4_2">
+                            <div class="weui-cell__hd">
+                                <input type="checkbox" name="s1" class="weui-check" id="s4_2">
+                                <i class="weui-icon-checked"></i>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <p>扩大活动效应</p>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="s4_3">
+                            <div class="weui-cell__hd">
+                                <input type="checkbox" name="s1" class="weui-check" id="s4_3">
+                                <i class="weui-icon-checked"></i>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <p>加速招聘人才</p>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="s4_4">
+                            <div class="weui-cell__hd">
+                                <input type="checkbox" name="s1" class="weui-check" id="s4_4">
+                                <i class="weui-icon-checked"></i>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <p>加速精准招商</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="weui-btn-area">
+                    <a class="weui-btn weui-btn_primary" href="javascript:" id="btnSure">确定</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--弹出层begin-->
+    <div id="dialogs">
+        <div class="js_dialog" id="iosDialog2" style="opacity: 1; display: none;">
+            <div class="weui-mask">
+            </div>
+            <div class="weui-dialog">
+                <div class="weui-dialog__bd" id="isRight">
+                    <p>
+                        恭喜你答对题目，长按二维码，加赛柏蓝小编
+                        《从0到100：医药营销实战攻略》好书相送
+                    </p>
+                    <img id="img_qr" src="" width="230">
+                </div>
+                <div class="weui-dialog__bd" id="isError">
+                    <p>距离正确答案只有1厘米的距离，请在仔细斟酌下...</p>
+                </div>
+                <div class="weui-dialog__ft">
+                    <a href="javascript:;" @click="sureClick" class="weui-dialog__btn weui-dialog__btn_primary">完成</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--弹出层end-->
+
+</body>
+<script>
+    var vm = new Vue({
+        el: '#container',
+        data: questionOption,
+        methods: {
+            sureClick: function () {
+                alert('aa');
+            } 
+        }
+    });
+
+
+
+    //产生随机数函数
+    function RndNum() {
+        var rnd = Math.floor(Math.random() * 10);
+        if (rnd < 5) {
+            return 1;
+        } else {
+            return 2;
+        }
+    }
+
+    $(function () {
+        var $img = $('#img_qr');
+        var nm = RndNum();
+        if (nm == 1) {
+            $img.attr('src', 'images/code1.jpg');
+        } else {
+            $img.attr('src', 'images/code2.jpg');
+        }
+
+        var $iosDialog1 = $('#iosDialog2');
+        $('#dialogs').on('click', '.weui-dialog__btn', function () {
+            $(this).parents('.js_dialog').fadeOut(200);
+        });
+
+        $("#btnSure").click(function () {
+            var s1Right = false,
+                s2Right = false,
+                s3Right = false,
+                s4Right = false;
+            if ($("#s1_1").prop('checked') && $("#s1_2").prop('checked') && $("#s1_3").prop('checked') && $("#s1_4").prop('checked')) {
+                s1Right = true;
+            }
+            if ($("#s2_1").prop('checked') && $("#s2_2").prop('checked') && $("#s2_3").prop('checked') && $("#s2_4").prop('checked')) {
+                s2Right = true;
+            }
+            if ($("#s3_4").prop('checked')) {
+                s3Right = true;
+            }
+            if ($("#s4_1").prop('checked') && $("#s4_2").prop('checked') && $("#s4_3").prop('checked') && $("#s4_4").prop('checked')) {
+                s4Right = true;
+            }
+            if (s1Right && s3Right) {
+                $("#isRight").show();
+                $("#isError").hide();
+            } else {
+                $("#isRight").hide();
+                $("#isError").show();
+            }
+            $iosDialog1.fadeIn(200);
+        });
+        
+    });
+</script>
+</html>
